@@ -11,16 +11,8 @@ Auto Ecole Project
 
 ## Setup instructions
 
-### 1. Install dependencies
 
-```
-git clone
-cd  floder
-npm install
-```
-
-
-## Installing
+# Installing
 
 ### 1. Setup up your app
 * 	URL to access application: **http://localhost:8080/**.
@@ -46,8 +38,8 @@ To run the application on your local machine. You must execute the `main` method
 
 
 ```shell
-$ git clone https://github.com/Spring-Boot-Framework/Spring-Boot-Application-Template.git
-$ cd Spring-Boot-Application-Template
+$ gh repo clone saife04/Auto-Ecole
+$ cd Auto-Ecole
 $ mvn spring-boot:run
 ```
 
