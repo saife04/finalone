@@ -25,7 +25,7 @@ npm install
 ### 1. Setup up your app
 * 	URL to access application: **http://localhost:8080/**.
 
-**application.properties** file to data base and jpa setup.
+* **application.properties** file to data base and jpa setup.
 
 
 
