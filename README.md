@@ -9,10 +9,8 @@ Auto Ecole Project
 - React native
 - android
 
-## Setup instructions
+## Installing and setup instructions
 
-
-# Installing
 
 ### 1. Setup up your app
 * 	URL to access application: **http://localhost:8080/**.
