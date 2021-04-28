@@ -1,0 +1,55 @@
+# Auto-Ecole
+Auto Ecole Project
+# sportapp
+
+
+## Requirements
+
+- NodeJS npm
+- React native
+- android
+
+## Setup instructions
+
+### 1. Install dependencies
+
+```
+git clone
+cd  floder
+npm install
+```
+
+### 2. Setup up your app
+
+Get your Stream API credentials from the  and make sure your application has these feed groups:
+- android studio env [lien](https://reactnative.dev/)
+
+
+### 3. Get your env
+
+```
+npm run init
+```
+Copy the line this script outputs and put it in your `.env` file.
+
+### 4. Setup the demo data
+
+Now we need to run the previous command again and this time it will preload your app with the sample data.
+
+```
+npx react-native run-android
+```
+
+### 5. Start your app
+
+```
+npx react-native start
+```
+
+Follow the instructions from the terminal to preview the app on your phone or using an emulator.
+### 6. docs
+
+ folder docs / index.html you find all class and function
+```
+npx  run docs
+```
