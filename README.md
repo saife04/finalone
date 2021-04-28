@@ -1,5 +1,5 @@
 # Auto-Ecole
-Auto Ecole Project
+Driving school Management solution
 
 
 ## Requirements
@@ -39,15 +39,26 @@ Auto Ecole Project
 ## Installing and setup instructions
 
 
-### 1. Setup up your app
+### . Setup up your app
 * 	URL to access application: **http://localhost:8080/**.
 
 * **application.properties** file to data base and jpa setup.
-* You need to have **PostgesSQL** installed on your machine to run the application in **`dev`** profile. Using the `PgAdmin` or on any other Postgres client/console, create a database/schema named `auto_ecole`. 
+* You need to have **PostgesSQL** installed on your machine to run the application. Using the `PgAdmin` or on any other Postgres client/console, create a database/schema named `auto_ecole`.
+* After creating the database/schema, you need to add your **PostgresSql** `username` and `password` in the `application.properties` file on `src/main/resource`. The lines that must be modified are as follows:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/auto_ecole
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto = update
+``` 
+
+You can choose `create` proprety for `spring.jpa.hibernate.ddl-auto` to create data base each time you lunch the app or `update` proprety to update database each time you lunch the app without dropping the schema.
 
 Other Setting : lombok setting
 
-* **To be able to use lombok with Eclipse IDE you must :
+To be able to use lombok with Eclipse IDE you must :
 * Download Lombok Jar File
 * Add lombok dependency in pom.xml
 * Run command line
@@ -61,7 +72,7 @@ Other Setting : lombok setting
 
 
 
-#### 2. Running the application with IDE
+#### . Running the application with IDE
 
 To run the application on your local machine. You must execute the `main` method in the `com.sid.autoEcole.AutoEcoleApplication` class from your IDE.
 
@@ -78,38 +89,14 @@ To run the application on your local machine. You must execute the `main` method
 
 
 ```shell
-$ gh repo clone saife04/Auto-Ecole
+$ git repo clone saife04/Auto-Ecole
 $ cd Auto-Ecole
 $ mvn spring-boot:run
 ```
 
 
-
-### 2. Get your env
-
-```
-npm run init
-```
-Copy the line this script outputs and put it in your `.env` file.
-
-### 4. Setup the demo data
-
-Now we need to run the previous command again and this time it will preload your app with the sample data.
-
-```
-npx react-native run-android
-```
-
-### 5. Start your app
-
-```
-npx react-native start
-```
-
-Follow the instructions from the terminal to preview the app on your phone or using an emulator.
 ### 6. docs
 
- folder docs / index.html you find all class and function
-```
-npx  run docs
-```
+ * 	[Swagger](http://localhost:8080/swagger-ui/#/) - `http://localhost:8080/swagger-ui/#/`- Documentation for REST API web developped under this application.
+ * 	[Swagger](http://localhost:8080/v2/api-docs) - `http://localhost:8080/v2/api-docs`- Documentation & Testing
+
