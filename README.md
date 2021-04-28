@@ -22,18 +22,14 @@ npm install
 
 ## Installing
 
-
+### 1. Setup up your app
 * 	URL to access application: **http://localhost:8080/**.
-* 	
+
 **application.properties** file to data base and jpa setup.
 
-### 2. Setup up your app
-
-Get your Stream API credentials from the  and make sure your application has these feed groups:
-- android studio env [lien](https://reactnative.dev/)
 
 
-### 3. Get your env
+### 2. Get your env
 
 ```
 npm run init
