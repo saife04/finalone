@@ -1,6 +1,5 @@
 # Auto-Ecole
 Auto Ecole Project
-# sportapp
 
 
 ## Requirements
