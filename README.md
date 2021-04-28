@@ -95,7 +95,8 @@ $ mvn spring-boot:run
 ```
 
 
-### 6. docs
+## docs
+
 
  * 	[Swagger](http://localhost:8080/swagger-ui/#/) - `http://localhost:8080/swagger-ui/#/`- Documentation for REST API web developped under this application.
  * 	[Swagger](http://localhost:8080/v2/api-docs) - `http://localhost:8080/v2/api-docs`- Documentation & Testing
